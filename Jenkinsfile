@@ -4,12 +4,12 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Hello World'
-        sh 'mvn test'
+        sh 'C:/TC/Maven/apache-maven-3.3.9/bin/mvn test'
       }
     }
     stage('Install') {
       steps {
-        sh 'mvn install'
+        sh 'C:/TC/Maven/apache-maven-3.3.9/bin/mvn install'
       }
     }
   }
